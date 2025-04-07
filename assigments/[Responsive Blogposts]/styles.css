@@ -1,0 +1,135 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 250px auto;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: #1e3a50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar-content {
+    text-align: center; 
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.login-btn:hover {
+    background: white;
+    color: #1e3a50;
+}
+
+/* Main Content Styling */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Blog Posts */
+.post {
+    display: grid;
+    grid-template-columns: auto 60px;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pinned-post {
+    
+    width: 50vw;
+}
+
+.recent-post {
+    
+    width: 50vw;
+}
+
+.post-text {
+    width: 100%;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    right: 0;
+    margin-bottom: 100px;
+}
+
+/* Author Tags */
+.author {
+    color: #007BFF;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.css { background: green; }
+.html { background: blue; }
+.js { background: red; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .post {
+        grid-template-columns: auto 50px;
+    }
+}

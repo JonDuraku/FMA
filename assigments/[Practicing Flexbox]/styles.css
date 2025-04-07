@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Like in the Flexbox Froggy example */
+    align-items: center;
+    background-color: #0077b6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.frog {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.green { color: green; }
+.yellow { color: yellow; }
+.red { color: red; }

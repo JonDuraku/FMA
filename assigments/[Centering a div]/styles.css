@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5e6c8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: #d4b88b;
+}
+
+.centered-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}

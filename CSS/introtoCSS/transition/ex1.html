@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container>div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        text-align: center;
+        transition-delay: 2s;/*specifikon nje vones deri ne fillimin e efektit*/
+        transition-duration: 4s;/*specifikon kohzgjatjen e ati efekti*/
+        transition-property: transform; /*specifikon cilen veqori te ndryshoj*/
+        }
+    .container>div:hover{
+        background-color: blue;
+        width: 300px;
+        transform: rotate(720deg);
+
+    }
+    .container2>div{
+        margin-top: 20px;
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+    }
+    .container2>div:hover{
+        width: 400px;
+    }
+    .i1{
+        transition-timing-function: ease;
+        transition-duration: 4s;
+}
+.i2{
+       transition-timing-function: linear;
+       transition-duration: 4s;
+}
+.i3{
+       transition-timing-function: ease-in;
+       transition-duration: 4s;
+}
+.i4{
+       transition-timing-function: ease-out;
+       transition-duration: 4s;
+}
+.i4
+.i5{
+       transition-timing-function: ease-in-out;
+       transition-duration: 4s;
+}
+</style>
+<body>
+    <div class="container">
+        <div>1</div>
+    </div>
+    <div class="container2">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+        <div class="i5">5</div>
+    </div>
+</body>
+</html>

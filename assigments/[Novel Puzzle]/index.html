@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drop Cap Style</title>
+  <style>
+    .drop-cap-paragraph {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: justify;
+    }
+
+    .drop-cap-paragraph::first-letter {
+      float: left;
+      font-size: 5em;
+      line-height: 1;
+      padding-right: 8px;
+      font-weight: bold;
+    }
+
+    .drop-cap-paragraph span.first-word {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="drop-cap-paragraph">
+    <span class="first-word">Decorative</span> initials used as drop capitals should be positioned on a text baseline and be sized so that the top of the capital letter aligns with the cap height on the first line of text.
+  </p>
+
+</body>
+</html>

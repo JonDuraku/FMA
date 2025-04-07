@@ -1,0 +1,61 @@
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* FLEXBOX Container */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* No wrapping, all in one row */
+    align-items: center; /* Aligns items at the bottom */
+    justify-content: flex-start; /* Aligns items from the left */
+    background-color: green;
+    padding: 20px;
+    gap: 8px; /* Adjust spacing to match */
+    width: fit-content;
+    height: 180px; /* Matches the green background */
+}
+
+/* Box styling */
+.box {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid green; /* Optional: Matches the photo border */
+}
+
+/* Exact sizes based on the image */
+.big {
+    height: 140px;
+    width: 80px;
+    font-size: 2.8rem;
+}
+
+.medium {
+    height: 100px;
+    width: 60px;
+    font-size: 1.5rem;
+}
+
+.silk {
+    height: 120px;
+    width: 75px;
+    font-size: 1.3rem;
+}
+
+.small {
+    height: 60px;
+    width: 45px;
+    font-size: 1rem;
+}
